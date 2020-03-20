@@ -49,9 +49,9 @@ python3.7 train.py
 
 本教程分别使用MNIST和CelebA数据集分别进行了`20`个和`50`个epoch的训练。训练完成后各随机采样了25张图像，结果如下。
 
-![49](/home/g_word/JitFlow/tutorial/mnist.png)
+![mnist](./mnist.png)
 
-![39](/home/g_word/JitFlow/tutorial/celeba.png)
+![celeba](./celeba.png)
 
 ### 3.2.速度对比
 
