@@ -55,15 +55,15 @@ python3.7 train.py
 
 ### 3.2.速度对比
 
-本教程使用Jittor与主流的深度学习框架PyTorch进行了训练速度的对比，下表为PyTorch(是/否打开benchmark)及Jittor在两种数据集上进行`1`次训练迭带的使用时间。得益于Jittor的异步接口及特有的元算子融合技术，其训练速度比PyTorch快了`40%~55%`。
+本教程使用Jittor与主流的深度学习框架PyTorch进行了训练速度的对比，下表为PyTorch(是/否打开benchmark)及Jittor在两种数据集上进行`1`次训练迭带的平均使用时间。得益于Jittor的异步接口及特有的元算子融合技术，其训练速度（平均每秒训练iter数）比PyTorch快了约`50%~60%`。
 
 |                              | MNIST        | CelebA       |
 | ---------------------------- | ------------ | :----------- |
-| pytorch                      | 0.4935 s     | 0.6414 s     |
-| pytorch-benchmark            | 0.4695 s     | 0.5916 s     |
-| Jittor                       | **0.2803 s** | **0.2863 s** |
-| speed up (pytorch)           | 43.2%        | 55.4%        |
-| speed up (pytorch-benchmark) | 40.3%        | 51.6%        |
+| pytorch                      | 0.4584 s     | 0.4929 s     |
+| pytorch-benchmark            | 0.4356 s     | 0.4698 s     |
+| Jittor                       | **0.2871 s** | **0.3108 s** |
+| speed up (pytorch)           | 59.7%        | 58.6%        |
+| speed up (pytorch-benchmark) | 51.7%        | 51.2%        |
 
 
 
